@@ -1,0 +1,63 @@
+.artContainer {
+  max-width: 500px;
+  width: 100%;
+}
+
+@media (max-width: 500px) {
+  .artContainer > p,
+  .artContainer > a {
+    padding: 0 6px;
+  }
+}
+
+.imageContainer {
+  width: 100%;
+  position: relative;
+  margin-bottom: 3px;
+}
+
+.titleText {
+  text-align: right;
+}
+
+.artistText {
+  text-align: right;
+  font-size: 1.5rem;
+  font-weight: 500;
+
+  margin-bottom: 10px;
+}
+
+.colorPalette {
+  margin-top: 10px;
+}
+
+.colors {
+  font-family: consolas;
+  width: 61.8%;
+  padding: 4px;
+}
+
+.disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.prevButton {
+  text-decoration: underline solid rgb(0, 0, 0);
+}
+
+.nextButton {
+  text-decoration: underline solid rgb(0, 0, 0);
+  float: right;
+}
+
+.imageButton {
+  position: absolute;
+  top: 0;
+
+  height: 100%;
+  width: 50%;
+
+  opacity: 0;
+}

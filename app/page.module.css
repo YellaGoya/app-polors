@@ -1,0 +1,32 @@
+.main {
+  display: flex;
+  max-width: 500px;
+  width: 100%;
+
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+
+  padding: 25px 0;
+}
+
+@media (max-width: 530px) {
+  .main {
+    padding: 0;
+    padding-bottom: 25px;
+  }
+}
+
+.footer {
+  width: 100%;
+  padding: 50px 0 20px 0;
+  font-size: 0.8rem;
+  opacity: 0.75;
+}
+
+@media (max-width: 500px) {
+  .footer {
+    padding: 50px 6px 20px 6px;
+  }
+}
