@@ -1,13 +1,9 @@
 import Link from 'next/link';
-
 import Image from 'next/image';
-import fetchLastestArts from 'lib/data';
 
 import css from './newArts.module.css';
 
-const NewArts = async ({ order }) => {
-  const art = await fetchLastestArts(order);
-
+const NewArts = async ({ art, order }) => {
   return (
     <article key={art.id} className={css.artContainer}>
       <div
